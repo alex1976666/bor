@@ -10,7 +10,7 @@ img {
   position: relative;
 }
 header {
-  background-color: #4F4D42;
+  background-color: #2A2827;
 }
 header .main-nav {
   float: right;
@@ -71,6 +71,8 @@ h2 {
   margin: 0 auto;
   font-size: 0;
   padding-top: 30px;
+  position: relative;
+  z-index: 555;
 }
 .promo .img-box span {
   display: inline-block;
@@ -123,14 +125,16 @@ h2 {
   border-radius: 5px;
   font-size: 26px;
   color: #fff;
-  background-color: #E06C0A;
+  background-color: #C0340B;
   box-shadow: 0 4px 5px #693719;
 }
 .promo .order-btn:hover {
-  border: 2px solid #B58C74;
+  border: 2px solid #a12047;
 }
 .promo .order-btn:active {
   box-shadow: inset 0 2px 5px #693719;
+  padding: 6px 65px 2px 30px;
+  border: 1px solid #C0340B;
 }
 .promo .order-btn img {
   width: 35px;
@@ -184,7 +188,7 @@ h2 {
 .contacts {
   color: #fff;
   padding: 50px 0 0;
-  background-color: #4F4D42;
+  background-color: #2A2827;
 }
 .contacts h2 {
   margin-bottom: 50px;
