@@ -1,0 +1,307 @@
+
+
+body{
+	font-family: 'PT Sans', sans-serif;
+	background-color: #f8f8f8;
+}
+
+img{
+	max-width: 100%;
+	border-radius: 6px;
+}
+
+.psr{
+	position: relative;
+}
+
+// Header
+
+header{
+	background-color: #4F4D42;
+	.main-nav{
+	float: right;
+	padding: 25px 0;
+
+
+
+		ul{
+			margin: 0;
+			padding: 0;
+		}
+	}
+	.main-nav__item{
+		display: inline-block;
+		vertical-align: middle;
+		padding: 1px 0;
+		margin: 0 4px;
+
+		a{
+			display: block;
+			color: #ccc;
+			font-size: 18px;
+			padding: 3px 6px;
+			transition: color .3s;
+
+			&:hover{
+				color: #fff;
+				text-decoration: none;
+				text-shadow: 0 0 5px #FFCC6F;
+			}
+		}
+	}
+}
+
+h2{
+		margin-bottom: 30px;
+	}
+.logo strong{
+			display: inline-block;
+			font-size: 60px;
+			font-weight: normal;
+			color: #fff;
+		}
+
+
+// Main
+
+
+
+
+// Promo
+
+.promo{
+	background: url(http://tutkit.ru/wp-content/uploads/2012/06/LinenTexture.jpg);
+	padding: 100px 0;
+
+
+	.cover{
+		padding: 15px 45px 30px;
+		background-color: rgba(0,0,0,.3);
+		border-radius: 6px;
+		box-shadow: 0 0 8px #000, inset 0 0 15px #333;
+	}
+
+	.promo-title{
+		margin-bottom: 30px;
+		color: #fff;
+	}
+	.promo-text p{
+		margin-top: 20px;
+		font-size: 18px;
+		color: #fff;
+	}
+	.img-box{
+		width: 85%;
+		margin: 0 auto;
+		font-size: 0;
+		padding-top: 30px;
+
+		span{
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 30px;
+			font-size: 50px;
+			color: #fff;
+			}
+
+		.images{
+			display: inline-block;
+			vertical-align: middle;
+			transition: transform .3s;
+
+			&:hover{
+		transform: scale(1.5);
+		}
+		}
+		.images-1{
+			width: 50%;
+		}
+		.images-2{
+			width: 40%;
+		}
+
+
+		.big{
+			
+		}
+
+		
+	}
+
+	.price-box{
+		margin-bottom: 10px;
+		padding-left: 80px;
+		text-align: right;
+		p{
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 46px;
+			font-weight: bold;
+			margin: 0 13px;
+			margin-top: 4px;
+		}
+	}
+
+	.badge{
+		width: 60px;
+		height: 60px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.order-btn{
+		padding: 4px 65px 4px 30px;
+		background-color: transparent;
+		outline: 0;
+		border: 2px solid #9B4F20;
+		border-radius: 5px;
+		font-size: 26px;
+		color: #fff;
+		background-color: #E06C0A;
+		box-shadow: 0 4px 5px #693719;
+
+		&:hover{
+			border: 2px solid #B58C74;
+		}
+		&:active{
+			box-shadow: inset 0 2px 5px #693719;
+		}
+
+		img{
+			width: 35px;
+			height: 35px;
+			display: inline-block;
+			margin-right: 1em;
+		}
+	}
+}
+
+// About
+
+.about{
+	padding: 80px 0;
+	background-color: #ebebeb;
+
+	p{
+		font-size: 18px;
+	}
+
+	.advantages{
+		padding-left: 30px;
+	}
+
+	ul li{
+		font-size: 18px;
+	}
+}
+
+
+
+// Slider
+
+
+.slider{
+
+	padding: 80px 0;
+
+	.owl-carousel img{
+		max-height: 250px;
+	}
+	.owl-item>div{
+		text-align: center;
+	}
+
+	
+	.complectation{
+		ul li{
+			font-size: 18px;
+			line-height: 25px;
+		}
+
+	}
+	.mt{
+			display: inline-block;
+			margin-top: 100px;
+		}
+}
+
+
+// Video
+
+
+.video{
+	padding: 80px 0;
+	background-color: #E5E5E5;
+
+	.video-box{
+		box-shadow: 0 0 20px #000;	
+	}
+
+	.video-description{
+		width: 70%;
+		margin: 0 auto;
+		font-size: 20px;
+		margin-top: 180px;
+	}
+}
+
+
+// Contacts
+
+
+.contacts{
+	color: #fff;
+	padding: 50px 0 0;
+	background-color: #4F4D42;
+
+	h2{
+		margin-bottom: 50px;
+		text-align: center;
+	}
+
+	ul{
+		width: 75%;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	ul li{
+		list-style: none;
+		margin-top: 15px;
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 30px;
+
+		&:nth-child(3) a{
+			font-size: 18px;
+		}
+		&:nth-child(4){
+			font-size: 18px;
+		}
+	}
+	.footer-phone{
+		width: 20px;
+		height: 20px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	a{
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 18px;
+		color: #fff;
+	}
+
+}
+
+.footer-logo{
+	padding: 15px 0;
+	margin-top: 8px;
+	text-align: center;
+	font-size: 30px;
+	border-top: 1px solid #ccc;
+}
+
+@import "media.less";
+

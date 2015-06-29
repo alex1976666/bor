@@ -1,0 +1,249 @@
+body {
+  font-family: 'PT Sans', sans-serif;
+  background-color: #f8f8f8;
+}
+img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+.psr {
+  position: relative;
+}
+header {
+  background-color: #4F4D42;
+}
+header .main-nav {
+  float: right;
+  padding: 25px 0;
+}
+header .main-nav ul {
+  margin: 0;
+  padding: 0;
+}
+header .main-nav__item {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 1px 0;
+  margin: 0 4px;
+}
+header .main-nav__item a {
+  display: block;
+  color: #ccc;
+  font-size: 18px;
+  padding: 3px 6px;
+  transition: color .3s;
+}
+header .main-nav__item a:hover {
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 5px #FFCC6F;
+}
+h2 {
+  margin-bottom: 30px;
+}
+.logo strong {
+  display: inline-block;
+  font-size: 60px;
+  font-weight: normal;
+  color: #fff;
+}
+.promo {
+  background: url(http://tutkit.ru/wp-content/uploads/2012/06/LinenTexture.jpg);
+  padding: 100px 0;
+}
+.promo .cover {
+  padding: 15px 45px 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  box-shadow: 0 0 8px #000, inset 0 0 15px #333;
+}
+.promo .promo-title {
+  margin-bottom: 30px;
+  color: #fff;
+}
+.promo .promo-text p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #fff;
+}
+.promo .img-box {
+  width: 85%;
+  margin: 0 auto;
+  font-size: 0;
+  padding-top: 30px;
+}
+.promo .img-box span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 30px;
+  font-size: 50px;
+  color: #fff;
+}
+.promo .img-box .images {
+  display: inline-block;
+  vertical-align: middle;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+}
+.promo .img-box .images:hover {
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+}
+.promo .img-box .images-1 {
+  width: 50%;
+}
+.promo .img-box .images-2 {
+  width: 40%;
+}
+.promo .price-box {
+  margin-bottom: 10px;
+  padding-left: 80px;
+  text-align: right;
+}
+.promo .price-box p {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 46px;
+  font-weight: bold;
+  margin: 0 13px;
+  margin-top: 4px;
+}
+.promo .badge {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.promo .order-btn {
+  padding: 4px 65px 4px 30px;
+  background-color: transparent;
+  outline: 0;
+  border: 2px solid #9B4F20;
+  border-radius: 5px;
+  font-size: 26px;
+  color: #fff;
+  background-color: #E06C0A;
+  box-shadow: 0 4px 5px #693719;
+}
+.promo .order-btn:hover {
+  border: 2px solid #B58C74;
+}
+.promo .order-btn:active {
+  box-shadow: inset 0 2px 5px #693719;
+}
+.promo .order-btn img {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  margin-right: 1em;
+}
+.about {
+  padding: 80px 0;
+  background-color: #ebebeb;
+}
+.about p {
+  font-size: 18px;
+}
+.about .advantages {
+  padding-left: 30px;
+}
+.about ul li {
+  font-size: 18px;
+}
+.slider {
+  padding: 80px 0;
+}
+.slider .owl-carousel img {
+  max-height: 250px;
+}
+.slider .owl-item > div {
+  text-align: center;
+}
+.slider .complectation ul li {
+  font-size: 18px;
+  line-height: 25px;
+}
+.slider .mt {
+  display: inline-block;
+  margin-top: 100px;
+}
+.video {
+  padding: 80px 0;
+  background-color: #E5E5E5;
+}
+.video .video-box {
+  box-shadow: 0 0 20px #000;
+}
+.video .video-description {
+  width: 70%;
+  margin: 0 auto;
+  font-size: 20px;
+  margin-top: 180px;
+}
+.contacts {
+  color: #fff;
+  padding: 50px 0 0;
+  background-color: #4F4D42;
+}
+.contacts h2 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.contacts ul {
+  width: 75%;
+  margin: 0 auto;
+  padding: 0;
+}
+.contacts ul li {
+  list-style: none;
+  margin-top: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 30px;
+}
+.contacts ul li:nth-child(3) a {
+  font-size: 18px;
+}
+.contacts ul li:nth-child(4) {
+  font-size: 18px;
+}
+.contacts .footer-phone {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.contacts a {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 18px;
+  color: #fff;
+}
+.footer-logo {
+  padding: 15px 0;
+  margin-top: 8px;
+  text-align: center;
+  font-size: 30px;
+  border-top: 1px solid #ccc;
+}
+@media (min-width: 767px) and (max-width: 991px) {
+  .slider .psr .my-set {
+    position: static;
+  }
+  .contacts ul li {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .slider .psr .my-set {
+    position: static;
+  }
+  .contacts ul li {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
