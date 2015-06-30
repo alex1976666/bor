@@ -1,15 +1,3 @@
-// SM
-
-@media (min-width: 767px) and (max-width: 991px){
-	.slider .psr .my-set{
-		position: static;
-	}
-	.contacts ul li{
-		display: block;
-		text-align: center;
-		margin-top: 20px;
-	}
-}
 
 
 
@@ -25,15 +13,119 @@
 @media (max-width: 767px){
 
 
-	.slider .psr .my-set{
-		position: static;
+	.logo{
+		text-align: center;
 	}
+	header .main-nav{
+		float: none;
+		
+
+		&__item{
+			display: block;
+			text-align: center;
+		}
+	}
+
+	.contacts ul{
+		display: block;
+	}
+
+
 	.contacts ul li{
 		display: block;
 		text-align: center;
 		margin-top: 20px;
 	}
+	.promo .img-box span{
+		margin-right: 0;
+		width: 20px;
+		display: block;
+		margin: 0 auto;
+	}
+	.promo .img-box .images{
+		display: block;
+		text-align: center;
+	}
+	.promo .img-box .images-1, .promo .img-box .images-2{
+		width: 100%;
+	}
+	.promo .price-box{
+		padding-left: 0;
+		text-align: center;
+		margin-top: 20px;
+	}
+	.promo .recall-btn, .promo .order-btn{
+		float: none;
+		display: block;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+
+	.about .use{
+		text-align: center;
+	}
+	.about .advantages{
+		text-align: center;
+		padding-left: 0;
+
+		ul{
+			padding: 0;
+		}
+
+		ul li{
+			list-style: none;
+			line-height: 35px;
+			border: 1px solid #DD5E1C;
+			margin-top: 5px;
+			border-radius: 6px;
+			font-size: 16px;
+		}
+	}
+
+	.video .video-description{
+		margin-top: 30px;
+	}
+
+	.order{
+		height: auto;
+		width: 60%;
+	}
+
+
 }
+
+
+// SM
+
+@media (min-width: 767px) and (max-width: 991px){
+
+	.contacts ul li{
+		display: block;
+		text-align: center;
+		margin-top: 20px;
+	}
+	.contacts ul{
+		display: block;
+	}
+}
+
+
+
+// MD
+
+
+@media (min-width: 992px) and (max-width: 1200px){
+	.promo .img-box span{
+		margin-right: 15px;
+	}
+
+	.contacts ul li{
+		margin: 0 19px;
+	}
+
+}
+
+
 
 
 

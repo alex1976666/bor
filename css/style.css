@@ -9,6 +9,11 @@ img {
 .psr {
   position: relative;
 }
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 header {
   background-color: #2A2827;
 }
@@ -100,7 +105,6 @@ h2 {
 }
 .promo .price-box {
   margin-bottom: 10px;
-  padding-left: 80px;
   text-align: right;
 }
 .promo .price-box p {
@@ -118,10 +122,9 @@ h2 {
   vertical-align: middle;
 }
 .promo .order-btn {
-  padding: 4px 65px 4px 30px;
-  background-color: transparent;
+  padding: 4px 45px 4px 30px;
   outline: 0;
-  border: 2px solid #9B4F20;
+  border: 2px solid #a12047;
   border-radius: 5px;
   font-size: 26px;
   color: #fff;
@@ -129,18 +132,43 @@ h2 {
   box-shadow: 0 4px 5px #693719;
 }
 .promo .order-btn:hover {
-  border: 2px solid #a12047;
+  border: 2px solid #9B4F20;
 }
 .promo .order-btn:active {
   box-shadow: inset 0 2px 5px #693719;
-  padding: 6px 65px 2px 30px;
-  border: 1px solid #C0340B;
+  padding: 6px 45px 2px 30px;
+  border: 2px solid #C0340B;
 }
 .promo .order-btn img {
   width: 35px;
   height: 35px;
   display: inline-block;
   margin-right: 1em;
+}
+.promo .recall-btn {
+  padding: 4px 25px 4px 20px;
+  outline: 0;
+  border: 2px solid #4A8E31;
+  border-radius: 5px;
+  font-size: 26px;
+  color: #fff;
+  background-color: #3C981D;
+  box-shadow: 0 4px 5px #255415;
+  float: left;
+}
+.promo .recall-btn:hover {
+  border: 2px solid #52A037;
+}
+.promo .recall-btn:active {
+  box-shadow: inset 0 2px 5px #255415;
+  padding: 6px 25px 2px 20px;
+  border: 2px solid #3C981D;
+}
+.promo .recall-btn img {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  margin-right: .5em;
 }
 .about {
   padding: 80px 0;
@@ -198,18 +226,20 @@ h2 {
   width: 75%;
   margin: 0 auto;
   padding: 0;
+  font-size: 0;
 }
 .contacts ul li {
   list-style: none;
   margin-top: 15px;
+  width: 20%;
   display: inline-block;
   vertical-align: middle;
-  margin: 0 30px;
+  text-align: center;
 }
 .contacts ul li:nth-child(3) a {
   font-size: 18px;
 }
-.contacts ul li:nth-child(4) {
+.contacts ul li:nth-child(5) {
   font-size: 18px;
 }
 .contacts .footer-phone {
@@ -231,23 +261,215 @@ h2 {
   font-size: 30px;
   border-top: 1px solid #ccc;
 }
-@media (min-width: 767px) and (max-width: 991px) {
-  .slider .psr .my-set {
-    position: static;
-  }
-  .contacts ul li {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-  }
+.recall {
+  width: 300px;
+  height: 300px;
+  padding: 20px 25px;
+  background-color: #fff;
+  border: 1px solid #3C981D;
+  border-radius: 8px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 999;
+  display: none;
+}
+.recall .form-text {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #3C981D;
+}
+.recall input {
+  width: 100%;
+  border: 1px solid #eaeaea;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #859094;
+  outline: 0;
+}
+.recall .recall-btn {
+  margin-top: 15px;
+  padding: 5px 25px;
+  font-size: 20px;
+  color: #3C981D;
+  border-radius: 8px;
+  border: 2px solid #3C981D;
+  outline: 0;
+  background-color: transparent;
+  transition: box-shadow 0.2s;
+}
+.recall .recall-btn:hover {
+  box-shadow: inset 0 0 15px #285a17;
+}
+.order {
+  width: 300px;
+  height: 520px;
+  color: #859094;
+  padding: 20px 25px;
+  background-color: #fff;
+  border: 1px solid #3C981D;
+  border-radius: 8px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 999;
+  overflow: auto;
+  display: none;
+}
+.order .quantity input {
+  width: 30%;
+  float: right;
+}
+.order .quantity label {
+  width: 40%;
+  float: left;
+  margin-top: 5px;
+}
+.order label {
+  font-size: 18px;
+  color: #867261;
+}
+.order input {
+  width: 100%;
+  border: 1px solid #CAAB92;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #859094;
+  outline: 0;
+}
+.order .fill {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 30px;
+  color: #867261;
+}
+.order .order-btn {
+  margin-top: 15px;
+  padding: 5px 25px;
+  font-size: 20px;
+  color: #C0340B;
+  border-radius: 8px;
+  border: 2px solid #C0340B;
+  background-color: transparent;
+  float: right;
+  outline: 0;
+  transition: box-shadow 0.2s;
+}
+.order .order-btn:hover {
+  box-shadow: inset 0 0 15px #662917;
+}
+.order .to-pay {
+  font-weight: bold;
+  color: #C0340B;
+  background-color: transparent;
+}
+.hover {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 998;
+  cursor: pointer;
+  display: none;
 }
 @media (max-width: 767px) {
-  .slider .psr .my-set {
-    position: static;
+  .logo {
+    text-align: center;
+  }
+  header .main-nav {
+    float: none;
+  }
+  header .main-nav__item {
+    display: block;
+    text-align: center;
+  }
+  .contacts ul {
+    display: block;
   }
   .contacts ul li {
     display: block;
     text-align: center;
     margin-top: 20px;
+  }
+  .promo .img-box span {
+    margin-right: 0;
+    width: 20px;
+    display: block;
+    margin: 0 auto;
+  }
+  .promo .img-box .images {
+    display: block;
+    text-align: center;
+  }
+  .promo .img-box .images-1,
+  .promo .img-box .images-2 {
+    width: 100%;
+  }
+  .promo .price-box {
+    padding-left: 0;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .promo .recall-btn,
+  .promo .order-btn {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .about .use {
+    text-align: center;
+  }
+  .about .advantages {
+    text-align: center;
+    padding-left: 0;
+  }
+  .about .advantages ul {
+    padding: 0;
+  }
+  .about .advantages ul li {
+    list-style: none;
+    line-height: 35px;
+    border: 1px solid #DD5E1C;
+    margin-top: 5px;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  .video .video-description {
+    margin-top: 30px;
+  }
+  .order {
+    height: auto;
+    width: 60%;
+  }
+}
+@media (min-width: 767px) and (max-width: 991px) {
+  .contacts ul li {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .contacts ul {
+    display: block;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .promo .img-box span {
+    margin-right: 15px;
+  }
+  .contacts ul li {
+    margin: 0 19px;
   }
 }
