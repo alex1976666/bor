@@ -12,6 +12,13 @@
 
 @media (max-width: 767px){
 
+	h2{
+		text-align: center;
+	}
+	ul{
+		padding-left: 0;
+	}
+
 
 	.logo{
 		text-align: center;
@@ -56,7 +63,8 @@
 		text-align: center;
 
 		.del{
-			left: 110px;
+			left: 50%;
+			margin-left: -60px;
 		}
 
 	}
@@ -84,12 +92,31 @@
 		span{
 			margin-left: 0;
 		}
+		.operator{
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+
+	}
+
+	// Advantages
+
+
+	.advantages{
+		.col-xs-12{
+			margin-bottom: 25px;
+		}
+		p img{
+			margin-bottom: 10px;
+		}
 	}
 
 	.about .use{
 		text-align: center;
 	}
-	.about .advantages{
+	.about .product-advantages{
 		text-align: center;
 		padding-left: 0;
 
@@ -107,6 +134,16 @@
 		}
 	}
 
+	.slider{
+		.complectation{
+			text-align: center;
+
+			ul li{
+				list-style: none;
+			}
+		}
+	}
+
 	.video .video-description{
 		margin-top: 30px;
 	}
@@ -117,6 +154,13 @@
 	}
 
 
+	// Delivery
+
+	.delivery, .pay{
+			margin-bottom: 50px;
+		}
+
+
 }
 
 
@@ -124,13 +168,76 @@
 
 @media (min-width: 767px) and (max-width: 991px){
 
-	.contacts ul li{
-		display: block;
+	.promo .old-price .del{
+		left: 50%;
+		margin-left: -60px;
+	}
+	.about{
 		text-align: center;
+
+		ul{
+			padding-left: 0;
+		}
+
+		ul li{
+			list-style: none;
+		}
+	}
+
+	.slider{
+		text-align: center;
+		ul{
+			padding-left: 0;
+		}
+		ul li{
+			list-style: none;
+		}
+	}
+
+	.contacts ul li{
+		width: 100%;
+		display: block;
+		margin: 0 auto;
 		margin-top: 20px;
 	}
 	.contacts ul{
 		display: block;
+	}
+
+	// Advantages
+
+
+	.advantages{
+		.col-xs-12{
+			margin-bottom: 25px;
+		}
+		p img{
+			margin-bottom: 10px;
+		}
+	}
+
+	.video{
+		text-align: center;
+	}
+	.callback{
+		text-align: center;
+
+		.operator{
+			margin-left: 0;
+		}
+
+		 span{
+		display: block;
+		margin: 0 auto;
+		font-size: 18px;
+		}
+	}
+
+	.delivery, .pay{
+		text-align: center;
+	}
+	ul{
+		padding-left: 0;
 	}
 }
 
@@ -143,9 +250,18 @@
 	.promo .img-box span{
 		margin-right: 15px;
 	}
+	.promo .old-price .del{
+		left: 50%;
+		margin-left: -60px;
+	}
 
 	.contacts ul li{
 		margin: 0 19px;
+	}
+
+	.callback span{
+		width: 70%;
+		font-size: 18px;
 	}
 
 }

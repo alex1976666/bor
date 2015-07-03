@@ -171,6 +171,7 @@ h2 {
   margin-right: 1em;
 }
 .callback {
+  background-color: #EBEBEB;
   padding: 60px 0;
 }
 .callback .operator {
@@ -266,6 +267,25 @@ h2 {
   margin: 0 auto;
   font-size: 20px;
   margin-top: 180px;
+}
+.delivery-pay {
+  padding: 80px 0;
+}
+.delivery-pay ul li {
+  width: 60%;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+  font-size: 20px;
+}
+.delivery-pay ul li img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 29px;
+}
+.feedback {
+  padding: 60px 0;
+  background-color: #EBEBEE;
 }
 .contacts {
   color: #fff;
@@ -439,6 +459,12 @@ h2 {
   display: none;
 }
 @media (max-width: 767px) {
+  h2 {
+    text-align: center;
+  }
+  ul {
+    padding-left: 0;
+  }
   .logo {
     text-align: center;
   }
@@ -478,7 +504,8 @@ h2 {
     text-align: center;
   }
   .promo .old-price .del {
-    left: 110px;
+    left: 50%;
+    margin-left: -60px;
   }
   .promo .price-box {
     padding-left: 0;
@@ -503,23 +530,40 @@ h2 {
   .callback span {
     margin-left: 0;
   }
+  .callback .operator {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .advantages .col-xs-12 {
+    margin-bottom: 25px;
+  }
+  .advantages p img {
+    margin-bottom: 10px;
+  }
   .about .use {
     text-align: center;
   }
-  .about .advantages {
+  .about .product-advantages {
     text-align: center;
     padding-left: 0;
   }
-  .about .advantages ul {
+  .about .product-advantages ul {
     padding: 0;
   }
-  .about .advantages ul li {
+  .about .product-advantages ul li {
     list-style: none;
     line-height: 35px;
     border: 1px solid #DD5E1C;
     margin-top: 5px;
     border-radius: 6px;
     font-size: 16px;
+  }
+  .slider .complectation {
+    text-align: center;
+  }
+  .slider .complectation ul li {
+    list-style: none;
   }
   .video .video-description {
     margin-top: 30px;
@@ -528,22 +572,84 @@ h2 {
     height: auto;
     width: 60%;
   }
+  .delivery,
+  .pay {
+    margin-bottom: 50px;
+  }
 }
 @media (min-width: 767px) and (max-width: 991px) {
-  .contacts ul li {
-    display: block;
+  .promo .old-price .del {
+    left: 50%;
+    margin-left: -60px;
+  }
+  .about {
     text-align: center;
+  }
+  .about ul {
+    padding-left: 0;
+  }
+  .about ul li {
+    list-style: none;
+  }
+  .slider {
+    text-align: center;
+  }
+  .slider ul {
+    padding-left: 0;
+  }
+  .slider ul li {
+    list-style: none;
+  }
+  .contacts ul li {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
     margin-top: 20px;
   }
   .contacts ul {
     display: block;
+  }
+  .advantages .col-xs-12 {
+    margin-bottom: 25px;
+  }
+  .advantages p img {
+    margin-bottom: 10px;
+  }
+  .video {
+    text-align: center;
+  }
+  .callback {
+    text-align: center;
+  }
+  .callback .operator {
+    margin-left: 0;
+  }
+  .callback span {
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+  .delivery,
+  .pay {
+    text-align: center;
+  }
+  ul {
+    padding-left: 0;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   .promo .img-box span {
     margin-right: 15px;
   }
+  .promo .old-price .del {
+    left: 50%;
+    margin-left: -60px;
+  }
   .contacts ul li {
     margin: 0 19px;
+  }
+  .callback span {
+    width: 70%;
+    font-size: 18px;
   }
 }
