@@ -211,6 +211,19 @@ h2 {
   display: inline-block;
   margin-right: .5em;
 }
+.advantages {
+  background-color: rgba(60, 152, 29, 0.2);
+  padding: 80px 0;
+  text-align: center;
+  font-size: 26px;
+  color: #6D737F;
+}
+.advantages p img {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin-bottom: 30px;
+}
 .about {
   padding: 80px 0;
   background-color: #ebebeb;
@@ -218,7 +231,7 @@ h2 {
 .about p {
   font-size: 18px;
 }
-.about .advantages {
+.about .product-advantages {
   padding-left: 30px;
 }
 .about ul li {
