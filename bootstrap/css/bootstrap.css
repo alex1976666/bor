@@ -1406,10 +1406,11 @@ abbr[data-original-title] {
   text-transform: uppercase;
 }
 blockquote {
-  padding: 10px 20px;
+  padding: 10px 40px 10px 20px;
   margin: 0 0 20px;
   font-size: 17.5px;
-  border-left: 5px solid #eeeeee;
+  border-left: 5px solid 
+#C7C3C0;
 }
 blockquote p:last-child,
 blockquote ul:last-child,
