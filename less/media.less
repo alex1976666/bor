@@ -160,6 +160,23 @@
 			margin-bottom: 50px;
 		}
 
+// Feedback
+
+.feedback{
+	text-align: center;
+
+	blockquote{
+		text-align: left;
+	}
+}
+
+.feedback .make-feedback input{
+	width: 100%;
+}
+.feedback .make-feedback textarea{
+	width: 100%;
+}
+
 
 }
 
@@ -239,6 +256,16 @@
 	ul{
 		padding-left: 0;
 	}
+
+	// Feedback
+
+.feedback{
+	text-align: center;
+
+	blockquote{
+		text-align: left;
+	}
+}
 }
 
 
@@ -256,7 +283,13 @@
 	}
 
 	.contacts ul li{
-		margin: 0 19px;
+		width: 50%;
+
+		&:last-child{
+			width: 100%;
+			margin: 0 auto;
+			margin-top: 20px;
+		}
 	}
 
 	.callback span{

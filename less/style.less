@@ -1,6 +1,9 @@
-
+html{
+	height: 100%;
+}
 
 body{
+	height: 100%;
 	font-family: 'PT Sans', sans-serif;
 	background-color: #f8f8f8;
 }
@@ -70,7 +73,9 @@ h2{
 
 // Main
 
-
+main{
+	min-height: 65%;
+}
 
 
 // Promo
@@ -395,15 +400,48 @@ h2{
 	background-color: #EBEBEE;
 
 	
-	.make-feedback{
-		text-align: right;
-		margin-top: 15px;
-		font-size: 16px;
-	}
+	
 	.more-feedback{
 		text-align: right;
 		margin-top: 5px;
 		font-size: 16px;
+	}
+
+	.make-feedback{
+		text-align: center;
+		margin-top: 15px;
+		font-size: 16px;
+		margin-top: 40px;
+		border-top: 1px solid #bbb;
+		padding-top: 40px;
+
+		h2{
+			margin-bottom: 40px;
+		}
+		input{
+			width: 300px;
+			padding: 8px 15px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			font-size: 18px;
+			color: #859094;
+			outline: 0;
+		}
+		textarea{
+			width: 600px;
+			min-height: 200px;
+			padding: 8px 15px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			font-size: 18px;
+			color: #859094;
+			outline: 0;
+		}
+		input[type=submit]{
+			width: 170px;
+			color: #fff;
+			background-color: #44A8B0;
+		}
 	}
 
 
@@ -486,7 +524,7 @@ cite{
 .feedback-page{
 	blockquote{
 		width: 70%;
-		margin: 10px auto;
+		margin: 30px auto;
 	}
 }
 

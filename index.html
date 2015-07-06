@@ -284,7 +284,9 @@
       <div class="feedback">
         <div class="container">
           <div class="row">
-          <h2>Отзывы</h2>
+          <div class="col-xs-12">
+            <h2>Отзывы</h2>
+          </div>
           
             <div class="col-xs-12 col-md-6 col-lg-6">
               <blockquote>
@@ -298,11 +300,21 @@
               </blockquote>
             </div>
             <div class="col-xs-12">
-              <div class="make-feedback">
-                <a href="#">Написать отзыв</a>
-              </div>
+              
               <div class="more-feedback">
-                <a href="feedback.html">Читать отзывы >></a>
+                <a href="feedback.html">Читать все отзывы >></a>
+              </div>
+            </div>
+
+           
+              <div class="col-xs-12">
+               <div class="make-feedback">
+              <h2>Напишите свой отзыв</h2>
+                <form>
+                  <p><input type="text" name="name" id="feedback-name" placeholder="Ваше имя" required></p>
+                  <p><textarea name="" id="feedback-text" placeholder="Ваш отзыв" required></textarea></p>
+                  <p><input type="submit" id="feedback-btn"></p>
+                </form>
               </div>
             </div>
           </div>
@@ -364,9 +376,9 @@
     <div class="recall">
       <form action="#" method="">
       <p class="form-text">Спасибо,<br> мы Вам перезвоним</p>
-        <p><input type="text" name="name" placeholder="Ваше имя"></p>
-        <p><input type="tel" name="phone" placeholder="Ваш телефон" required></p>
-        <button type="submit" class="recall-btn id="call-me-2" ">Позвоните мне</button>
+        <p><input type="text" name="name" id="recall-name" placeholder="Ваше имя"></p>
+        <p><input type="tel" name="phone" id="recall-phone" placeholder="Ваш телефон" required></p>
+        <button type="submit" class="recall-btn" id="call-me-2">Позвоните мне</button>
       </form>
     </div>
 
@@ -377,14 +389,15 @@
         </div>
         <div class="client-data">
         <p class="fill">Заполните поля,<br> чтобы мы с Вами связались</p>
-          <p><label for="name">Ваше имя</label><input type="text" id="name" placeholder="Имя" required></p>
-          <p><label for="phone">Ваш телефон</label><input type="text" id="phone" placeholder="Телефон" required></p>
+          <p><label for="name">Ваше имя</label><input type="text" id="order-name" placeholder="Имя" required></p>
+          <p><label for="phone">Ваш телефон</label><input type="text" id="order-phone" placeholder="Телефон" required></p>
           <p><label for="city">Ваш город</label><input type="text" id="city" placeholder="Город" required></p>
           <p><label for="mail">Ваш E-Mail</label><input type="text" id="mail" placeholder="E-Mail"></p>
         </div>
         <button type="submit" class="order-btn" id="order-2">Заказать</button>
       </form>
     </div>
+
 
 
 
