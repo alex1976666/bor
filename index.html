@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="description" content="Продажа и доставка пневматических гравировальных мини-бормашин в Санкт-Петербурге и Ленинградской области">
-    <meta name="keywords" content="пневмоинструмент,инструмент,мини-бормашина,гравировка,бормашинка карандашного типа,micro air grinder,revtool">
+    <meta name="keywords" content="пневмоинструмент,инструмент,мини-бормашина,гравировка,бормашинка карандашного типа,micro air grinder,revtool,mettler">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index,follow">
@@ -11,7 +11,7 @@
     <link rel="icon" href="img/fav.png" type="image/x-icon">
 
   
-    <title>Гравировальные бормашины в Санкт-Петербурге</title>
+    <title>Купить пневматические гравировальные бормашины в Санкт-Петербурге</title>
 
     <link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
@@ -375,12 +375,17 @@
 
     <div class="recall">
       <form action="#" method="">
-      <p class="form-text">Спасибо,<br> мы Вам перезвоним</p>
+      <p class="form-text">Заполните форму</p>
         <p><input type="text" name="name" id="recall-name" placeholder="Ваше имя"></p>
         <p><input type="tel" name="phone" id="recall-phone" placeholder="Ваш телефон" required></p>
         <button type="submit" class="recall-btn" id="call-me-2">Позвоните мне</button>
       </form>
+      
     </div>
+
+    <div class="recall-thanks">
+        Спасибо,<br> мы Вам перезвоним.
+      </div>
 
     <div class="order">
       <form action="" class="clearfix">
@@ -396,6 +401,13 @@
         </div>
         <button type="submit" class="order-btn" id="order-2">Заказать</button>
       </form>
+    </div>
+
+    <div class="order-set">
+    <div class="order-set__img">
+      <img src="img/smiling36.svg" alt="Смайлик">
+    </div>
+      Спасибо,<br> Ваш заказ принят.
     </div>
 
 
@@ -420,17 +432,32 @@
         });  
       });
 
-      $("#call-me").click(function(){
-          $(".recall, .hover").fadeIn();
+      $("#call-me").click(function(e){
+        e.preventDefault();
+        $(".recall, .hover").fadeIn();
         });
 
-      $("#order").click(function(){
-          $(".order, .hover").fadeIn();
+      $("#call-me-2").click(function(e){
+        e.preventDefault();
+        $(".recall").fadeOut();
+        $(".recall-thanks").fadeIn();
+        });
+     
+
+      $("#order").click(function(e){
+        e.preventDefault();
+        $(".order, .hover").fadeIn();
       }); 
 
+      $("#order-2").click(function(e){
+        e.preventDefault();
+        $(".order").fadeOut();
+        $(".order-set").fadeIn();
+      });
 
-      $(".hover, .call-me-2, .order-2").click(function(){
-        $(".recall, .order, .hover").fadeOut();
+
+      $(".hover, .order-2").click(function(){
+        $(".recall, .order, .recall-thanks, .order-set, .hover").fadeOut();
       });
     </script>
 
