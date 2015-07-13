@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic);
 html {
   height: 100%;
 }
@@ -269,6 +270,11 @@ main {
 .video .video-box {
   box-shadow: 0 0 20px #000;
 }
+.video .video-box .youtube {
+  width: 100%;
+  height: 360px;
+  border: 0;
+}
 .video .video-description {
   width: 70%;
   margin: 0 auto;
@@ -277,7 +283,7 @@ main {
 }
 .delivery-pay {
   padding: 80px 0;
-  background-color: #d3d3d3;
+  background-color: #D7DBE4;
 }
 .delivery-pay section {
   border: 1px solid #aaa;
@@ -399,6 +405,33 @@ cite {
 .feedback-page blockquote {
   width: 70%;
   margin: 30px auto;
+}
+.error {
+  height: 100%;
+  text-align: center;
+  padding-top: 100px;
+  background: url(../img/404.jpg) no-repeat;
+  background-size: cover;
+}
+.error p {
+  font-size: 48px;
+  color: #fff;
+}
+.error p a {
+  color: #DEB887;
+}
+.error ul {
+  padding: 40px 0;
+}
+.error ul li {
+  list-style: none;
+  font-size: 30px;
+  line-height: 60px;
+  color: #fff;
+}
+.error ul li span {
+  font-size: 40px;
+  padding-right: 10px;
 }
 .recall {
   width: 300px;
@@ -593,6 +626,10 @@ cite {
     text-align: center;
     margin-top: 20px;
   }
+  .promo .cover {
+    text-align: center;
+    padding: 10px;
+  }
   .promo .img-box span {
     margin-right: 0;
     width: 20px;
@@ -624,7 +661,7 @@ cite {
     margin-top: 20px;
   }
   .promo .recall-btn,
-  .promo .order-btn {
+  .promo .promo .order-btn {
     float: none;
     display: block;
     margin: 0 auto;
@@ -662,7 +699,8 @@ cite {
   }
   .about .product-advantages ul li {
     list-style: none;
-    line-height: 35px;
+    line-height: 25px;
+    padding: 5px 0;
     border: 1px solid #DD5E1C;
     margin-top: 5px;
     border-radius: 6px;
@@ -674,8 +712,15 @@ cite {
   .slider .complectation ul li {
     list-style: none;
   }
+  .video .youtube {
+    width: 100%;
+    height: 360px;
+  }
   .video .video-description {
     margin-top: 30px;
+  }
+  .video p {
+    text-align: center;
   }
   .order {
     height: auto;
@@ -696,6 +741,27 @@ cite {
   }
   .feedback .make-feedback textarea {
     width: 100%;
+  }
+  .feedback-page blockquote {
+    width: 100%;
+  }
+  .error {
+    height: 100%;
+    background-size: auto;
+    padding: 20px 0;
+  }
+  .error p {
+    font-size: 30px;
+  }
+  .error ul {
+    padding: 40px 0;
+  }
+  .error ul li {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .error ul li span {
+    font-size: 22px;
   }
 }
 @media (min-width: 767px) and (max-width: 991px) {
@@ -753,6 +819,7 @@ cite {
   .delivery,
   .pay {
     text-align: center;
+    margin-bottom: 30px;
   }
   ul {
     padding-left: 0;
@@ -763,6 +830,24 @@ cite {
   .feedback blockquote {
     text-align: left;
   }
+  .error {
+    height: 100%;
+    background-size: auto;
+    padding: 30px 0;
+  }
+  .error p {
+    font-size: 30px;
+  }
+  .error ul {
+    padding: 40px 0;
+  }
+  .error ul li {
+    font-size: 26px;
+    line-height: 40px;
+  }
+  .error ul li span {
+    font-size: 22px;
+  }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   .promo .img-box span {
@@ -771,6 +856,10 @@ cite {
   .promo .old-price .del {
     left: 50%;
     margin-left: -60px;
+  }
+  .delivery,
+  .pay {
+    min-height: 370px;
   }
   .contacts ul li {
     width: 50%;

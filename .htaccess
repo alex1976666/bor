@@ -1,0 +1,2 @@
+ErrorDocument 403 https://sweb.ru/wrong
+ErrorDocument 404 http://www.airbor.ru/404.html

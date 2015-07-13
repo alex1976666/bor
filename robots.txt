@@ -1,0 +1,8 @@
+User-agent: Yandex
+Disallow: /cgi-bin
+Host: airbor.ru
+Sitemap: http://airbor.ru/sitemap.xml
+
+User-agent: *
+Disallow: /cgi-bin
+Sitemap: http://airbor.ru/sitemap.xml

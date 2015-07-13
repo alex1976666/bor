@@ -44,20 +44,28 @@
 		text-align: center;
 		margin-top: 20px;
 	}
-	.promo .img-box span{
+	.promo{ 
+
+		.cover{
+		text-align: center;
+		padding: 10px;
+	}
+
+		.img-box span{
 		margin-right: 0;
 		width: 20px;
 		display: block;
 		margin: 0 auto;
 	}
-	.promo .img-box .images{
+
+	.img-box .images{
 		display: block;
 		text-align: center;
 	}
-	.promo .img-box .images-1, .promo .img-box .images-2{
+	.img-box .images-1, .img-box .images-2{
 		width: 100%;
 	}
-	.promo .old-price{
+	.old-price{
 		width: 100%;
 		display: block;
 		text-align: center;
@@ -68,19 +76,21 @@
 		}
 
 	}
-	.promo .price-box{
+	.price-box{
 		padding-left: 0;
 		display: block;
 		width: 100%;
 		text-align: center;
 		margin-top: 20px;
 	}
-	.promo .recall-btn, .promo .order-btn{
+	.recall-btn, .promo .order-btn{
 		float: none;
 		display: block;
 		margin: 0 auto;
 		margin-top: 20px;
 	}
+
+}
 
 	.callback{
 		text-align: center;
@@ -126,7 +136,8 @@
 
 		ul li{
 			list-style: none;
-			line-height: 35px;
+			line-height: 25px;
+			padding: 5px 0;
 			border: 1px solid #DD5E1C;
 			margin-top: 5px;
 			border-radius: 6px;
@@ -144,13 +155,28 @@
 		}
 	}
 
-	.video .video-description{
-		margin-top: 30px;
+
+
+	.video {
+
+		.youtube{
+			width: 100%;
+			height: 360px;
+		}
+
+		.video-description{
+			margin-top: 30px;
+		}
+
+			p{
+				text-align: center;
+			}
 	}
 
 	.order{
 		height: auto;
 		width: 60%;
+
 	}
 
 
@@ -175,6 +201,41 @@
 }
 .feedback .make-feedback textarea{
 	width: 100%;
+}
+
+
+// feedback page
+
+.feedback-page blockquote{
+	width: 100%;
+}
+
+
+// 404 page
+
+
+.error{
+	height: 100%;
+	background-size: auto;
+	padding: 20px 0;
+
+	p{
+		font-size: 30px;
+	}
+
+	ul{
+		padding: 40px 0;
+
+	}
+
+	ul li{
+		font-size: 20px;
+		line-height: 25px;
+
+		span{
+			font-size: 22px;
+		}
+	}
 }
 
 
@@ -252,10 +313,12 @@
 
 	.delivery, .pay{
 		text-align: center;
+		margin-bottom: 30px;
 	}
 	ul{
 		padding-left: 0;
 	}
+
 
 	// Feedback
 
@@ -264,6 +327,34 @@
 
 	blockquote{
 		text-align: left;
+	}
+}
+
+
+// 404 page
+
+
+.error{
+	height: 100%;
+	background-size: auto;
+	padding: 30px 0;
+
+	p{
+		font-size: 30px;
+	}
+
+	ul{
+		padding: 40px 0;
+
+	}
+
+	ul li{
+		font-size: 26px;
+		line-height: 40px;
+
+		span{
+			font-size: 22px;
+		}
 	}
 }
 }
@@ -280,6 +371,10 @@
 	.promo .old-price .del{
 		left: 50%;
 		margin-left: -60px;
+	}
+
+	.delivery, .pay{
+		min-height: 370px;
 	}
 
 	.contacts ul li{
