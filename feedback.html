@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="Продажа и доставка пневматических гравировальных мини-бормашин в Санкт-Петербурге и Ленинградской области">
+    <meta name="description" content="Отзыво об инструменте пневматическая мини бормашина">
     <meta name="keywords" content="пневмоинструмент,инструмент,мини-бормашина,гравировка,бормашинка карандашного типа,micro air grinder,revtool">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,7 +13,6 @@
   
     <title>Гравировальные бормашины в Санкт-Петербурге</title>
 
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="owl.carousel/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="owl.carousel/owl-carousel/owl.theme.css">
@@ -95,14 +94,14 @@
               <ul>
                 <li>
                   <img src="img/telephone5.svg" class="footer-phone" alt="phone">
-                  <a href="tel: +79118376607">+7(911)837-66-07</a>
+                  <a href="tel:+79118376607">+7(911)837-66-07</a>
                 </li>
                 <li>
                   <img src="img/telephone5.svg" class="footer-phone" alt="phone">
-                  <a href="tel: +79643983800">+7(964)398-38-00</a>
+                  <a href="tel:+79643983800">+7(964)398-38-00</a>
                 </li>
                 <li>
-                  <a href="mailto: ">air-bor@gmail.com</a>
+                  <a href="mailto:airbor.spb@gmail.com">airbor.spb@gmail.com</a>
                 </li>
                 <li>
                   <a href="http://vk.com/airbor" target="_blank">Группа в ВК</a>
@@ -133,16 +132,16 @@
     <!-- Modals -->
 
     <div class="recall">
-      <form action="#" method="">
+      <form action="#" method="post">
       <p class="form-text">Спасибо,<br> мы Вам перезвоним</p>
         <p><input type="text" name="name" placeholder="Ваше имя"></p>
         <p><input type="tel" name="phone" placeholder="Ваш телефон" required></p>
-        <button type="submit" class="recall-btn id="call-me-2" ">Позвоните мне</button>
+        <button type="submit" class="recall-btn" id="call-me-2">Позвоните мне</button>
       </form>
     </div>
 
     <div class="order">
-      <form action="" class="clearfix">
+      <form action="#" method="post" class="clearfix">
         <div class="quantity">
           <p class="clearfix"><label for="number">Количество шт.</label><input type="text" id="number" name="quantity" required></p>
         </div>
@@ -156,41 +155,6 @@
         <button type="submit" class="order-btn" id="order-2">Заказать</button>
       </form>
     </div>
-
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-2.1.3.min.js"></script>
-    <script src="owl.carousel/owl-carousel/owl.carousel.js"></script>
-
-    <script>
-      $(document).ready(function() {
-       
-        $("#owl-demo").owlCarousel({
-          autoPlay : true,
-          stopOnHover : true,
-          navigation:true,
-          paginationSpeed : 1000,
-          goToFirstSpeed : 2000,
-          singleItem : true,
-          autoHeight : false,
-          transitionStyle:"fade"
-        });  
-      });
-
-      $("#call-me").click(function(){
-          $(".recall, .hover").fadeIn();
-        });
-
-      $("#order").click(function(){
-          $(".order, .hover").fadeIn();
-      }); 
-
-
-      $(".hover, .call-me-2, .order-2").click(function(){
-        $(".recall, .order, .hover").fadeOut();
-      });
-    </script>
 
   </body>
 </html>
